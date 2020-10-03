@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="refresh" content="3;URL=https://hypnoponies.org/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hypnoponies</title>
+	</head>
+	<body>
+		<h1>You will automatically be redirected in <span id="timeOut">3</span> seconds</h1>
+		<p>301: This website has been permanently moved to <a href="https://hypnoponies.org/">https://hypnoponies.org/</a></p>
+	</body>
+	<script>
+		var timeOut = 3;
+		window.setInterval(function () {
+			if (timeOut > 0) {
+				timeOut--;
+			}
+			document.getElementById('timeOut').innerText = timeOut;
+		}, 1000);
+	</script>
+</html>
